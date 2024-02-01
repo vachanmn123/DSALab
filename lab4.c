@@ -1,5 +1,7 @@
 #include <string.h>
+
 int count = 0;
+
 struct node
 {
     struct node *prev;
@@ -8,6 +10,7 @@ struct node
     char name[20], dept[10], desg[20];
     struct node *next;
 } *h, *temp, *temp1, *temp2, *temp4;
+
 void create()
 {
     int ssn, phno;
@@ -26,6 +29,7 @@ void create()
     temp->phno = phno;
     count++;
 }
+
 void insertbeg()
 {
     if (h == NULL)
@@ -42,6 +46,7 @@ void insertbeg()
         h = temp;
     }
 }
+
 void insertend()
 {
     if (h == NULL)
@@ -58,6 +63,7 @@ void insertend()
         temp1 = temp;
     }
 }
+
 void displaybeg()
 {
     temp2 = h;
@@ -74,6 +80,7 @@ void displaybeg()
     }
     printf(" No of employees = %d ", count);
 }
+
 int deleteend()
 {
     struct node *temp;
@@ -94,6 +101,7 @@ int deleteend()
         return 0;
     }
 }
+
 int deletebeg()
 {
     struct node *temp;
@@ -112,6 +120,7 @@ int deletebeg()
         return 0;
     }
 }
+
 void main()
 {
     int ch, n, i;

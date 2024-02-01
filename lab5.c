@@ -1,16 +1,21 @@
 #define SIZE 50
+
 #include <ctype.h>
 #include <stdio.h>
+
 char s[SIZE];
 int top = -1;
+
 push(char elem)
 {
     s[++top] = elem;
 }
+
 char pop()
 {
     return (s[top--]);
 }
+
 int pr(char elem)
 {
     switch (elem)
@@ -30,6 +35,7 @@ int pr(char elem)
         return 4;
     }
 }
+
 void main()
 {
     char infx[50], pofx[50], ch, elem;

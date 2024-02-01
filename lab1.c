@@ -1,12 +1,16 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+
 #define max_size 5
+
 int stack[max_size], top = -1;
+
 void push();
 void pop();
 void display();
 void pali();
+
 int main()
 {
     int choice;
@@ -45,6 +49,7 @@ int main()
     }
     return 0;
 }
+
 void push()
 {
     int item, n;
@@ -60,6 +65,7 @@ void push()
         stack[top] = item;
     }
 }
+
 void pop()
 {
     int item;
@@ -74,6 +80,7 @@ void pop()
         printf("\nThe poped element: %d\t", item);
     }
 }
+
 void pali()
 {
     int digit, j, k, len = top + 1, flag = 0, ind = 0, length = 0;
@@ -118,6 +125,7 @@ void pali()
     }
     top = len - 1;
 }
+
 void display()
 {
     int i;

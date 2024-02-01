@@ -1,7 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 #define max 10
+
 int q[10], front = 0, rear = -1;
+
 void main()
 {
     int ch;
@@ -32,6 +35,7 @@ void main()
         }
     }
 }
+
 void insert()
 {
     int x;
@@ -53,6 +57,7 @@ void insert()
         }
     }
 }
+
 void delet()
 {
     int a;
@@ -76,6 +81,7 @@ void delet()
         a = q[front++];
     printf("Deleted element is:%d\n", a);
 }
+
 void display()
 {
     int i, j;

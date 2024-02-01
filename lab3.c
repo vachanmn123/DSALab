@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
 int count = 0;
+
 struct node
 {
     int sem, phno;
@@ -24,6 +26,7 @@ void create()
     temp->next = NULL;
     count++;
 }
+
 void insert_atfirst()
 {
     if (first == NULL)
@@ -39,6 +42,7 @@ void insert_atfirst()
         first = temp;
     }
 }
+
 void insert_atlast()
 {
     if (first == NULL)
@@ -54,6 +58,7 @@ void insert_atlast()
         last = temp;
     }
 }
+
 void display()
 {
     temp1 = first;
@@ -70,6 +75,7 @@ void display()
     }
     printf(" No of students = %d ", count);
 }
+
 int deleteend()
 {
     struct node *temp;
@@ -91,6 +97,7 @@ int deleteend()
         return 0;
     }
 }
+
 int deletefront()
 {
     struct node *temp;
@@ -111,6 +118,7 @@ int deletefront()
         return 0;
     }
 }
+
 void main()
 {
     int ch, n, i;
