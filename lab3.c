@@ -125,7 +125,7 @@ void main()
     first = NULL;
     temp = temp1 = NULL;
     printf(" MENU \n");
-    printf("\n 1- create a SLL of n emp");
+    printf("\n 1- create a SLL of n students");
     printf("\n 2 - Display from beginning");
     printf("\n 3 - Insert at end");
     printf("\n 4 - delete at end");
